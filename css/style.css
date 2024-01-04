@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+/* table */
+table {
+  width: 100%;
+}
+
+table th {
+  padding: 0.5em 0;
+  background-color: #666;
+  border: 1px solid #bbb;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+table td {
+  padding: 0.6em;
+  border: 1px solid #bbb;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* login */
+#login {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#login .login_area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26em;
+  text-align: center;
+}
+
+#login .text_area h1 {
+  margin-bottom: 0.1em;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+#login .text_area p {
+  margin-bottom: 3em;
+  opacity: 0.8;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+#login .input_area {
+  margin-bottom: 2em;
+}
+
+#login .input_area input {
+  display: block;
+  margin-bottom: 1em;
+}
+
+#login .input_area input:last-child {
+  margin-bottom: 0;
+}
+
+#login .btn_login {
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* container */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* left_menu */
+#left_menu {
+  width: 16em;
+  min-height: 100vh;
+  background: #141318;
+}
+
+#left_menu .logo {
+  height: 6.6em;
+  line-height: 6.6em;
+  text-align: center;
+}
+
+#left_menu .logo a {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+#left_menu ul li {
+  width: 100%;
+  height: 3.5em;
+  border-bottom: 1px solid #555;
+  opacity: 0.8;
+}
+
+#left_menu ul li:first-child {
+  border-top: 1px solid #555;
+}
+
+#left_menu ul li.on {
+  background-color: #d28c0e;
+  opacity: 1;
+}
+
+#left_menu ul li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+#left_menu ul li img {
+  width: 1.3em;
+  margin-right: 0.5em;
+}
+
+#left_menu ul li h4 {
+  color: #fff;
+}
+
+/* contents */
+#contents {
+  width: calc(100vw - 16em);
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid #bbb;
+}
+
+header h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+header h3 a {
+  margin-right: 0.5em;
+}
+
+header h3 a img {
+  margin-top: 0.1em;
+}
+
+header .tnb strong {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #d28c0e;
+}
+
+header .tnb span {
+  padding: 0 0.3em;
+  font-size: 1.4rem;
+  color: #999;
+}
+
+header .tnb .btn_logout {
+  font-size: 1.4rem;
+}
+
+/* table_area */
+.table_area {
+  padding: 1em;
+}
+
+/* filter */
+.filter {
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #e7e7e7;
+}
+
+.filter > * {
+  margin-right: 0.5em;
+}
+
+.filter .startDate,
+.filter .endDate {
+  width: 12em;
+  padding: 0.7em 1em;
+  padding-left: 2em;
+  border-radius: 4px;
+  background-image: url(../img/ico_calendar.png);
+  background-repeat: no-repeat;
+  background-size: auto 45%;
+  background-position: 0.6em 50%;
+}
+
+/* add_area */
+.add_area {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+.add_area .btn {
+  margin-left: 0.5em;
+}
+
+/* edit_area */
+.edit_area {
+  padding: 1em;
+}
+
+.edit_area h4 {
+  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.edit_area table th {
+  width: 8%;
+}
+
+.edit_area table td {
+  text-align: left;
+}
+
+.edit_area .btn_area {
+  margin: 4em 0;
+}
+
+.edit_area .btn_area .btn {
+  width: 6em;
+}
+
+.edit_area .btn_area .btn:first-child {
+  margin-right: 0.6em;
+}
+
+.edit_area .chk_area {
+  display: flex;
+  align-items: center;
+  padding: 0.8em 0;
+}
+
+.edit_area .chk_area label {
+  margin-right: 2em;
+  margin-left: 0.2em;
+  font-size: 1.4rem;
+}
+
+.edit_area select {
+  margin-right: 0.5em;
+}
+
+.edit_area .choice {
+  margin-top: 2em;
+}
+
+.edit_area .gallery {
+  margin-top: 2em;
+}
+
+.edit_area .gallery ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.edit_area .gallery li {
+  position: relative;
+  width: calc((100% - 4em) / 5);
+  height: 33em;
+  padding: 0.5em;
+  margin-right: 1em;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.edit_area .gallery li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.edit_area .gallery li:nth-child(n + 5) {
+  margin-top: 0.5em;
+}
+
+.edit_area .gallery li > * {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.edit_area .gallery li figure {
+  position: relative;
+  width: 100%;
+  height: 20em;
+  margin: 0;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.edit_area .gallery li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+}
+
+.edit_area .gallery li.input_wrap_plus {
+  position: relative;
+  cursor: pointer;
+}
+
+.edit_area .gallery li.input_wrap_plus .text_area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.edit_area .gallery li.input_wrap_plus span {
+  font-size: 6.8rem;
+  color: #d28c0e;
+}
+
+.edit_area .gallery li.input_wrap_plus p {
+  font-weight: 2rem;
+  font-weight: 500;
+  color: #d28c0e;
+}
+
+.edit_area .gallery li.input_wrap_plus button {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 9;
+}
+
+.edit_area .gallery textarea {
+  width: 100%;
+  height: 4em;
+}
+
+.edit_area .gallery .del_img {
+  position: absolute;
+  top: 0.6em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.edit_area .gallery .del_img span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}

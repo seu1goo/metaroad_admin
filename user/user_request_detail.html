@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- title -->
+    <title>Metaroad VR 프로그램</title>
+
+    <!-- reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reactive.css" />
+
+    <!-- script -->
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- script -->
+    <script defer src="../js/fileimage.js"></script>
+
+    <!-- container -->
+    <div id="container">
+
+        <!-- left_menu -->
+        <nav id="left_menu">
+            <h1 class="logo"><a href="../index.html">메타로드주식회사</a></h1>
+            <ul>
+                <li class="on">
+                    <a href="../user/user.html">
+                        <img src="../img/ico_account.png" alt="회원 관리" />
+                        <h4>회원 관리</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="../store/store.html">
+                        <img src="../img/ico_store.png" alt="지점 관리" />
+                        <h4>지점 관리</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="../account/account.html">
+                        <img src="../img/ico_lock.png" alt="계정 관리" />
+                        <h4>계정 관리</h4>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- // left_menu -->
+
+        <!-- contents -->
+        <section id="contents">
+
+            <!-- header -->
+            <header>
+                <h3>
+                    <a href="javascript:history.back();"><img src="../img/ico_chevron.png" alt="뒤로가기" /></a>
+                    <span>회원 정보</span>
+                </h3>
+                <div class="tnb">
+                    <strong>admin</strong>
+                    <span>|</span>
+                    <button type="button" class="btn_logout">로그아웃</button>
+                </div>
+            </header>
+            <!-- // header -->
+
+            <!-- edit_area -->
+            <div class="edit_area">
+
+                <div class="required">
+                    <h4>필수 입력</h4>
+                    <table>
+                        <tr>
+                            <th>이름</th>
+                            <td>김철수</td>
+                        </tr>
+                        <tr>
+                            <th>나이</th>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <th>출생지</th>
+                            <td>서울시 구로구</td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td>010-1234-5678</td>
+                        </tr>
+                        <tr>
+                            <th>지점</th>
+                            <td>판교점</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="choice">
+                    <h4>선택 입력</h4>
+                    <table>
+                        <tr>
+                            <th>주민번호</th>
+                            <td>123456-1234567</td>
+                        </tr>
+                        <tr>
+                            <th>성별</th>
+                            <td>남성</td>
+                        </tr>
+                        <tr>
+                            <th>치매종류</th>
+                            <td>알츠하이머</td>
+                        </tr>
+                        <tr>
+                            <th>치매등급</th>
+                            <td>5등급</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="btn_area">
+                    <button type="button" class="btn btn--bk--line btn_refusal" onclick="callRefusal();">거절</button>
+                    <button type="button" class="btn btn--bk btn_approval" onclick="callApproval();">승인</button>
+                </div>
+                <!-- // edit_area -->
+
+        </section>
+        <!-- // contents -->
+
+    </div>
+</body>
+
+</html>
